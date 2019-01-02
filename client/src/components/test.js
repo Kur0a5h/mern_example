@@ -8,17 +8,17 @@ export default class Test extends Component {
             name: 'Kim K.'
         };
 
-        const resp = await axios.post('/api/send-message', message);
+        const postresp = await axios.post('/api/send-message', message);
 
-        console.log('Send Message Resp:', resp);
+        console.log('Send Message Resp:', postresp);
         
-        // const resp= await axios.get('/api/test');
+        const resp= await axios.get('/api/test');
         
-        // console.log('Test Response:', resp);
+        console.log('Test Response:', resp);
     
-        // const user = await axios.get('/api/user');
+        const user = await axios.get('/api/user');
 
-        // console.log('User Response:', user);
+        console.log('User Response:', user);
     }
     
     render(){
